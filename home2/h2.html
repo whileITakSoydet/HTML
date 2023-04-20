@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 250px;
+            font-size: 30px;
+        }
+        ol{
+            padding: 2rem;
+            list-style-type: none;
+            counter-reset: number;
+            background: rgb(232, 148, 131);
+        }
+        ol li::before{
+            content: counter(number) '. ';
+            counter-increment: number;
+            margin-left: 10px;
+            color: white;
+        }
+        li{
+            margin: 10px;
+            padding: 10px 0 10px 10px;
+            background: rgb(235, 77, 45);
+        }
+        mark{
+            margin: 10px;
+            padding: 10px;
+            background: rgb(184, 19, 35);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li><mark>Apple</mark></li>
+            <li><mark>Orange</mark></li>
+            <li><mark>Pineapple</mark></li>
+            <li><mark>Pear</mark></li>
+            <li><mark>Cherry</mark></li>
+        </ol>
+    </div>
+</body>
+</html>
