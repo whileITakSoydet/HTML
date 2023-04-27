@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         margin:0;
+      }
+      .watch{
+         width: 300px;
+         height: 300px;
+         border-radius: 50%;
+         background-color: aqua;
+      }
+      .sec::after{
+         content: '';
+         width: 3px;
+         height: 120px;
+         position: absolute;
+         left: 150px;
+         top:150px;
+         background-color: red;
+         transform-origin: 0 0;
+         animation: sec 3s linear normal infinite;
+         transform: rotate(90deg);
+      }
+      .min::after{
+         content: '';
+         width: 3px;
+         height: 100px;
+         position: absolute;
+         left: 150px;
+         top:150px;
+         background-color: blue;         
+         transform-origin: 0 0;         
+         animation: min 180s linear normal infinite;
+         transform: rotate(0deg);
+      }
+      .hour::after{
+         content: '';
+         width: 3px;
+         height: 80px;
+         position: absolute;
+         left: 150px;
+         top:150px;
+         background-color: black;
+         transform-origin: 0 0;
+         animation: hour 10800s linear normal infinite;
+         transform: rotate(180deg);
+      }
+      @keyframes sec{
+         0%{
+            transform: rotate(180deg);
+         }
+         25%{
+            transform: rotate(270deg);
+         }
+         50%{
+            transform: rotate(360deg);
+         }
+         75%{
+            transform: rotate(450deg);
+         }
+         100%{
+            transform: rotate(540deg);
+         }
+      }
+      @keyframes min{
+         0%{
+            transform: rotate(180deg);
+         }
+         25%{
+            transform: rotate(270deg);
+         }
+         50%{
+            transform: rotate(360deg);
+         }
+         75%{
+            transform: rotate(450deg);
+         }
+         100%{
+            transform: rotate(540deg);
+         }
+      }
+      @keyframes hour{
+         0%{
+            transform: rotate(180deg);
+         }
+         25%{
+            transform: rotate(270deg);
+         }
+         50%{
+            transform: rotate(360deg);
+         }
+         75%{
+            transform: rotate(450deg);
+         }
+         100%{
+            transform: rotate(540deg);
+         }
+      }
+   </style>
+</head>
+<body>
+   <div class="watch">
+      <div class="sec"></div>
+      <div class="min"></div>
+      <div class="hour"></div>
+   </div>
+</body>
+</html>

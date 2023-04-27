@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gates{
+            margin-top: 150px;;
+            display: flex;
+            justify-content: center;
+            perspective: 600px;
+            align-items: center;
+        }
+        h1{
+            position: absolute;
+            z-index: -1;
+            color: red;
+        }
+        .door{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            transition: all 1s;
+        }
+        .door_left{
+            transform-origin: left;
+        }
+        .door_right{
+            transform-origin: right;
+        }
+        .gates:hover .door_left{
+            transform: rotateY(60deg);
+        }
+        .gates:hover .door_right{
+            transform: rotateY(-60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="gates">
+        <div class="door door_left" ></div>
+        <div class="door door_right" ></div>
+        <h1>Закрой!</h1>
+      </div>  
+</body>
+</html>
