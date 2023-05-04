@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: rgb(117, 218, 218);
+            border: 30px solid rgb(214, 203, 203);
+            border-radius: 30px;
+            padding-left: 20px;
+            background-image: url(img/moon_flag.png);
+            background-repeat: no-repeat;
+            background-position-x: 400px;
+            background-position-y: 150px;
+            background-size: 300px auto;
+        }
+        .head{
+            position: relative;
+            width: 500px;
+            height: 2rem;
+            background-color: rgb(232, 129, 19);
+            color: white;
+            right: 40px;
+            top:5px;
+        }
+        .long{
+            width: 400px;
+            height: 2rem;
+            background-color: rgb(90, 193, 193);
+            border: 0px;
+            border-bottom: 3px solid black;
+        }
+        .short{
+            width: 128px;
+            height: 2rem;
+            background-color: rgb(90, 193, 193);
+            border: 0px;
+            border-bottom: 3px solid black;
+        }
+        .data{
+            float: left;
+        }
+        .password{
+            margin-left: 4px;
+            float: left;
+        }
+        h3{
+            color: grey;
+            font-size: 1.2rem;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+		    <h2>CREDIT CARD DETAILS</h2>
+        </div>
+		<form method="get">
+                <h3>Card Number</h3>
+            <input class="long" type="text" placeholder="1234 5678 9012 3456">
+            <h3>Name On Card</h3>
+            <input class="long" type="text" placeholder="Name Suname">
+            <div class="block">
+                <div class="data">
+                    <h3>Expiry Date</h3>
+                    <input class="short" type="text" placeholder="02">
+                    <input class="short" type="text" placeholder="2023">
+                </div>
+                <div class="password">
+                    <h3>CVV / CVN</h3>
+                    <input class="short" type="password" placeholder="***">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
